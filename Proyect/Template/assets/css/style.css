@@ -84,6 +84,16 @@ header {
     text-align: right;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* =============================================================
    LOGO SECTION STYLES
@@ -95,8 +105,19 @@ header {
 }
 
 .navbar-brand {
-    width: 150px;
-    padding-bottom: 30px;
+    width:200px;
+    height:auto;
+}
+
+.Logo {
+    width:200px;
+    height:200px;
+}
+
+.navbar-header{
+  display: inline-block !important;
+  float: none;
+  margin-right:0 !important;
 }
 
 /* USER SETTINGS DIV */
@@ -174,11 +195,7 @@ header {
 
 
 .menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
-<<<<<<< HEAD
     background-color: #0e76a8 !important;
-=======
-    background-color: #0e76a8!important;
->>>>>>> origin/master
 }
 
 .menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
@@ -191,11 +208,7 @@ header {
 }
 
 .navbar-toggle {
-<<<<<<< HEAD
-    background-color: #e50707;
-=======
     background-color: #0e76a8;
->>>>>>> origin/master
     border: 1px solid #fff;
 }
 

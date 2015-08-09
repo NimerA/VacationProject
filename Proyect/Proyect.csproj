@@ -83,14 +83,14 @@
     <Content Include="Logo_02.png" />
     <Content Include="Global.asax" />
     <Content Include="Logo_01.png" />
+    <Content Include="Template\assets\js\bootstrap.min.js" />
+    <Content Include="Template\assets\js\npm.js" />
     <Content Include="Web.config" />
     <Content Include="Template\assets\css\bootstrap.css" />
     <Content Include="Template\assets\css\font-awesome.css" />
     <Content Include="Template\assets\css\style.css" />
     <Content Include="Template\assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Template\assets\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Template\assets\img\64-64.jpg" />
-    <Content Include="Template\assets\img\logo.png" />
     <Content Include="Template\assets\js\bootstrap.js" />
     <Content Include="Template\assets\js\jquery-1.11.1.js" />
     <Content Include="Template\blank.html" />
