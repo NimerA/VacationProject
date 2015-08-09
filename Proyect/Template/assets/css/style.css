@@ -95,8 +95,8 @@ header {
 }
 
 .navbar-brand {
-    width: 250px;
-    padding-top: 30px;
+    width: 150px;
+    padding-bottom: 30px;
 }
 
 /* USER SETTINGS DIV */
@@ -128,13 +128,13 @@ header {
 
     .user-settings-wrapper .nav > li > a:hover,.user-settings-wrapper .nav > li > a:focus {
         text-decoration: none;
-        background-color: #C36464!important;
+        background-color: #C36464 !important;
     }
 
     .user-settings-wrapper img {
         height: 64px;
         width: 64px;
-        border: 1px solid #000000;
+        border: 1px solid #0e4ea8;
     }
 
     .user-settings-wrapper .dropdown-menu {
@@ -161,7 +161,7 @@ header {
 }
 
 #menu-top a {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     padding: 10px 10px 10px 10px;
@@ -174,7 +174,11 @@ header {
 
 
 .menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
+<<<<<<< HEAD
+    background-color: #0e76a8 !important;
+=======
     background-color: #0e76a8!important;
+>>>>>>> origin/master
 }
 
 .menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
@@ -182,12 +186,16 @@ header {
 }
 
 .navbar-inverse {
-    background-color: #C36464;
+    background-color: #E5E5E5;
     border-color: transparent;
 }
 
 .navbar-toggle {
+<<<<<<< HEAD
+    background-color: #e50707;
+=======
     background-color: #0e76a8;
+>>>>>>> origin/master
     border: 1px solid #fff;
 }
 
