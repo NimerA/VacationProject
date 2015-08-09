@@ -1,0 +1,95 @@
+﻿@model Proyect.Models.Login_Data
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+
+    <title>Login</title>
+    <link href="~/Template/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Template/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Template/assets/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--============ Header ==========-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>Email: </strong>info@sicariosdisponibles.com
+                    &nbsp;&nbsp;
+                    <strong>Support: </strong>+66-666-666-66
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!--=========== Seleccion Bar Start =======-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+
+                            <li><a href="Home">Home</a></li>
+                            <li><a class="menu-top-active" href="Login">Login</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--=========== Seleccion Bar Ends =======-->
+    <!--============ Center ==========-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    LOGIN IN
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!--============= END ============-->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            &copy; 2015 NCD | By : Lol
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+            <script src="~/Template/assets/js/bootstrap.js"></script>
+            <script src="~/Template/assets/js/jquery-1.11.1.js"></script>
+</body>
+</html>
