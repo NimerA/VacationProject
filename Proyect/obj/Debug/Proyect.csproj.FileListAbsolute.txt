@@ -20,7 +20,6 @@ C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Pro
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\Proyect.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\Proyect.pdb
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Helpers.dll
-C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Mvc.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Razor.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Webpages.Deployment.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Webpages.dll
@@ -30,7 +29,13 @@ C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Pro
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Webpages.Deployment.xml
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Webpages.Razor.xml
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Helpers.xml
-C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Mvc.xml
-C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\obj\Debug\Proyect.csprojResolveAssemblyReference.cache
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\obj\Debug\Proyect.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\obj\Debug\Proyect.pdb
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\EntityFramework.dll
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\EntityFramework.SqlServer.dll
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Mvc.dll
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\EntityFramework.xml
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\EntityFramework.SqlServer.xml
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\bin\System.Web.Mvc.xml
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\obj\Debug\Proyect.csprojResolveAssemblyReference.cache

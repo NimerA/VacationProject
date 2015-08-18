@@ -24,6 +24,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
+
 }
 
 .set-radius-zero {
@@ -32,10 +33,11 @@ body {
     -webkit-border-radius: 0px;
 }
 
-.content-wrapper {
-    margin-top: 40px;
-    min-height: 600px;
-    padding-bottom: 60px;
+#login h1{
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
 }
 
 .page-head-line {
@@ -83,6 +85,17 @@ header {
     padding: 10px;
     text-align: right;
 }
+
+#login{
+    width:400px;
+    margin:0 auto;
+    padding-top:75px;
+}
+
+#body-background {
+    background-image:url(../../../back.jpg);
+}
+
 
 img {
     max-width: 100%;
@@ -219,10 +232,13 @@ img {
    FOOTER SECTION STYLES
  ============================================================ */
 footer {
-    padding: 10px;
+    padding: 10px;lo
     color: #fff;
     font-size: 12px;
     background-color: #0e76a8;
+    position:absolute;
+    bottom:0;
+    width: 100%;
 }
 
     footer a, footer a:hover {

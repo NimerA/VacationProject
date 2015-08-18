@@ -38,7 +38,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -48,6 +58,30 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -57,34 +91,72 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Web.Razor">
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.2\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Webpages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Deployment">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Razor">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Helpers">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.2\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Logo_02.png" />
+    <Content Include="Template\assets\img\back.jpg" />
+    <Content Include="Template\assets\img\Logo_02.png" />
     <Content Include="Global.asax" />
-    <Content Include="Logo_01.png" />
+    <Content Include="Template\assets\img\Logo_01.png" />
+    <Content Include="Template\assets\img\dark_wood.png" />
+    <Content Include="Template\assets\img\slide-bg.png" />
+    <Content Include="Template\assets\img\tick.png" />
+    <Content Include="Template\assets\js\jquery.min.js" />
     <Content Include="Template\assets\js\bootstrap.min.js" />
     <Content Include="Template\assets\js\npm.js" />
+    <Content Include="Template\index-bs3.html" />
+    <Content Include="Template\index_2.html" />
+    <Content Include="Template_2\charts.html" />
+    <Content Include="Template_2\css\base-admin-responsive.css" />
+    <Content Include="Template_2\css\bootstrap-responsive.min.css" />
+    <Content Include="Template_2\css\bootstrap.css" />
+    <Content Include="Template_2\css\bootstrap.min.css" />
+    <Content Include="Template_2\css\font-awesome-ie7.css" />
+    <Content Include="Template_2\css\font-awesome-ie7.min.css" />
+    <Content Include="Template_2\css\font-awesome.css" />
+    <Content Include="Template_2\css\font-awesome.min.css" />
+    <Content Include="Template_2\css\pages\dashboard.css" />
+    <Content Include="Template_2\css\pages\faq.css" />
+    <Content Include="Template_2\css\pages\plans.css" />
+    <Content Include="Template_2\css\pages\reports.css" />
+    <Content Include="Template_2\css\pages\signin.css" />
+    <Content Include="Template_2\css\style.css" />
+    <Content Include="Template_2\error.html" />
+    <Content Include="Template_2\faq.html" />
+    <Content Include="Template_2\font\fontawesome-webfont.svg" />
+    <Content Include="Template_2\guidely.html" />
+    <Content Include="Template_2\icons.html" />
+    <Content Include="Template_2\img\body-bg.png" />
+    <Content Include="Template_2\img\glyphicons-halflings-white.html" />
+    <Content Include="Template_2\img\glyphicons-halflings.html" />
+    <Content Include="Template_2\img\icons-sa7c41345d9.png" />
+    <Content Include="Template_2\img\message_avatar1.png" />
+    <Content Include="Template_2\img\message_avatar2.png" />
+    <Content Include="Template_2\img\signin\check.png" />
+    <Content Include="Template_2\img\signin\fb_btn.png" />
+    <Content Include="Template_2\img\signin\password.png" />
+    <Content Include="Template_2\img\signin\twitter_btn.png" />
+    <Content Include="Template_2\img\signin\user.png" />
+    <Content Include="Template_2\index.html" />
+    <Content Include="Template_2\js\base.js" />
+    <Content Include="Template_2\js\bootstrap.js" />
+    <Content Include="Template_2\js\chart.min.js" />
+    <Content Include="Template_2\js\charts\area.js" />
+    <Content Include="Template_2\js\charts\bar.js" />
+    <Content Include="Template_2\js\charts\donut.js" />
+    <Content Include="Template_2\js\charts\line.js" />
+    <Content Include="Template_2\js\charts\pie.js" />
+    <Content Include="Template_2\js\excanvas.min.js" />
+    <Content Include="Template_2\js\faq.js" />
+    <Content Include="Template_2\js\full-calendar\fullcalendar.css" />
+    <Content Include="Template_2\js\full-calendar\fullcalendar.min.js" />
+    <Content Include="Template_2\js\guidely\guidely-number.png" />
+    <Content Include="Template_2\js\guidely\guidely.css" />
+    <Content Include="Template_2\js\guidely\guidely.min.js" />
+    <Content Include="Template_2\js\jquery-1.7.2.min.js" />
+    <Content Include="Template_2\js\signin.js" />
+    <Content Include="Template_2\login.html" />
+    <Content Include="Template_2\pricing.html" />
+    <Content Include="Template_2\reports.html" />
+    <Content Include="Template_2\shortcodes.html" />
+    <Content Include="Template_2\signup.html" />
     <Content Include="Web.config" />
     <Content Include="Template\assets\css\bootstrap.css" />
     <Content Include="Template\assets\css\font-awesome.css" />
@@ -111,9 +183,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="packages.config" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="packages.config" />
+    <Content Include="Template_2\font\fontawesome-webfont.eot" />
+    <Content Include="Template_2\font\fontawesome-webfont.svgz" />
+    <Content Include="Template_2\font\fontawesome-webfont.ttf" />
+    <Content Include="Template_2\font\fontawesome-webfont.woff" />
+    <Content Include="Template_2\font\fontawesome-webfontd41d.eot" />
+    <Content Include="Template_2\font\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
