@@ -1,0 +1,8 @@
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\bin\WcfService.dll.config
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\bin\WcfService.dll
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\bin\WcfService.pdb
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\bin\EntityFramework.dll
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\bin\EntityFramework.xml
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\obj\Debug\WcfService.dll
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\obj\Debug\WcfService.pdb
