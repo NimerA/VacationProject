@@ -22,7 +22,6 @@ C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Pro
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\obj\Debug\Proyect.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Proyect\obj\Debug\Proyect.pdb
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\EntityFramework.dll
-C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\EntityFramework.SqlServer.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\System.Web.Helpers.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\System.Web.Mvc.dll
@@ -31,7 +30,6 @@ C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Pro
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\System.Web.WebPages.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\System.Web.WebPages.Razor.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\EntityFramework.xml
-C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\EntityFramework.SqlServer.xml
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\System.Web.Helpers.xml
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\System.Web.Mvc.xml
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\System.Web.Razor.xml

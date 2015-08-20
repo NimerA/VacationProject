@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Project.Models;
+using Project.ServiceReference;
 
 namespace Project.Controllers
 {
@@ -12,6 +13,9 @@ namespace Project.Controllers
 
         public ActionResult index()
         {
+            ServiceClient client = new ServiceClient();
+            client.AddEstatus("lol");
+            client.Close();
             return View();
         }
 
