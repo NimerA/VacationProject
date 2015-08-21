@@ -75,52 +75,52 @@ namespace Project.ServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IService")]
-    public interface IService {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IService1")]
+    public interface IService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetData", ReplyAction="http://tempuri.org/IService/GetDataResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
         string GetData(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetData", ReplyAction="http://tempuri.org/IService/GetDataResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/AddEstatus", ReplyAction="http://tempuri.org/IService/AddEstatusResponse")]
-        void AddEstatus(string desc);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddEstatus_Descrption", ReplyAction="http://tempuri.org/IService1/AddEstatus_DescrptionResponse")]
+        void AddEstatus_Descrption(string Desccription);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/AddEstatus", ReplyAction="http://tempuri.org/IService/AddEstatusResponse")]
-        System.Threading.Tasks.Task AddEstatusAsync(string desc);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddEstatus_Descrption", ReplyAction="http://tempuri.org/IService1/AddEstatus_DescrptionResponse")]
+        System.Threading.Tasks.Task AddEstatus_DescrptionAsync(string Desccription);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService/GetDataUsingDataContractResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
         Project.ServiceReference.CompositeType GetDataUsingDataContract(Project.ServiceReference.CompositeType composite);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService/GetDataUsingDataContractResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
         System.Threading.Tasks.Task<Project.ServiceReference.CompositeType> GetDataUsingDataContractAsync(Project.ServiceReference.CompositeType composite);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceChannel : Project.ServiceReference.IService, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : Project.ServiceReference.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceClient : System.ServiceModel.ClientBase<Project.ServiceReference.IService>, Project.ServiceReference.IService {
+    public partial class Service1Client : System.ServiceModel.ClientBase<Project.ServiceReference.IService1>, Project.ServiceReference.IService1 {
         
-        public ServiceClient() {
+        public Service1Client() {
         }
         
-        public ServiceClient(string endpointConfigurationName) : 
+        public Service1Client(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public ServiceClient(string endpointConfigurationName, string remoteAddress) : 
+        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
@@ -132,12 +132,12 @@ namespace Project.ServiceReference {
             return base.Channel.GetDataAsync(value);
         }
         
-        public void AddEstatus(string desc) {
-            base.Channel.AddEstatus(desc);
+        public void AddEstatus_Descrption(string Desccription) {
+            base.Channel.AddEstatus_Descrption(Desccription);
         }
         
-        public System.Threading.Tasks.Task AddEstatusAsync(string desc) {
-            return base.Channel.AddEstatusAsync(desc);
+        public System.Threading.Tasks.Task AddEstatus_DescrptionAsync(string Desccription) {
+            return base.Channel.AddEstatus_DescrptionAsync(Desccription);
         }
         
         public Project.ServiceReference.CompositeType GetDataUsingDataContract(Project.ServiceReference.CompositeType composite) {

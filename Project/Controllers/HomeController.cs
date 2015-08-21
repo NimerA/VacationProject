@@ -13,8 +13,8 @@ namespace Project.Controllers
 
         public ActionResult index()
         {
-            ServiceClient client = new ServiceClient();
-            client.AddEstatus("lol");
+            Service1Client client = new Service1Client();
+            client.AddEstatus_Descrption("Desc. es Mueble");
             client.Close();
             return View();
         }
