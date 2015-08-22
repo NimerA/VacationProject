@@ -1,4 +1,5 @@
-﻿
+﻿@model Project.Models.Register_Data
+
 @{
     Layout = null;
 }
@@ -11,6 +12,7 @@
     <meta name="description" content="description">
     <meta name="author" content="Evgeniya">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="~/Res/plugins/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
@@ -28,22 +30,45 @@
                 <div class="text-right">
                     <a href="Login" class="txt-default">Already have an account?</a>
                 </div>
+                @using (Html.BeginForm())
+                {
                 <div class="box">
                     <div class="box-content">
                         <div class="text-center">
                             <h3 class="page-header">Register</h3>
                         </div>
                         <div class="form-group">
-                            <label class="control-label">Username</label>
-                            <input type="text" class="form-control" name="email" />
+                            <label class="control-label">Primer Nombre</label>
+                            @Html.TextBoxFor(x => x.First_Name, new { @class = "form-control", type = "text" })
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Segundo Nombre</label>
+                            @Html.TextBoxFor(x => x.Second_Name, new { @class = "form-control", type = "text" })
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Primer Apellido</label>
+                            @Html.TextBoxFor(x => x.First_Surname, new { @class = "form-control", type = "text" })
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Segundo Apellido</label>
+                            @Html.TextBoxFor(x => x.Second_Surname, new { @class = "form-control", type = "text" })
                         </div>
                         <div class="form-group">
                             <label class="control-label">E-mail</label>
-                            <input type="text" class="form-control" name="email" />
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", type = "email" })
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Fecha de Ingreso</label>
+                            @Html.TextBoxFor(x => x.Date_In, new { @class = "date-picker", type = "date" })
                         </div>
                         <div class="form-group">
                             <label class="control-label">Password</label>
-                            <input type="password" class="form-control" name="password" />
+                            @Html.TextBoxFor( x => x.Password ,new {@class="form-control", name="pass1", id="pass1", type="password"})
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Repeat Password</label>
+                            @Html.TextBoxFor(x=>x.RePassword,new{ @class="form-control", name="pass2" ,id="pass2" ,onkeyup="checkPass(); return false;", type="password"})
+                            <span class="confirmMessage" id="confirmMessage"></span>
                         </div>
                         <div class="checkbox">
                             <label>
@@ -54,10 +79,13 @@
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary">Register</button>
                         </div>
+                        @Html.ValidationSummary()
                     </div>
                 </div>
+                }
             </div>
         </div>
     </div>
+    <script src="~/Res/js/devoops.js"></script>
 </body>
 </html>

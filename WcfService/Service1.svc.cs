@@ -27,17 +27,39 @@ namespace WcfService
 
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public bool AuthenticateUser(LoginData LD) 
         {
-            if (composite == null)
+            /*
+            vsystem_ndcEntities db = new vsystem_ndcEntities();
+            tbl_usuarios usuario = new tbl_usuarios();
+            usuario = db.tbl_usuarios.Find(LD.Email);
+            if(usuario != null)
             {
-                throw new ArgumentNullException("composite");
+                if (usuario.password == LD.Password) 
+                {
+                    return true;
+                }
             }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            */
+
+            return true;
+        }
+
+        public void InsertRegistrationData(UserData UD) 
+        {
+            vsystem_ndcEntities db = new vsystem_ndcEntities();
+            tbl_usuarios usuario = new tbl_usuarios();
+            usuario.primer_nombre = UD.First_Name;
+            usuario.segundo_nombre = UD.Second_Name;
+            usuario.primer_apellido = UD.First_Surname;
+            usuario.segundo_apellido = UD.Second_Surname;
+            usuario.email = UD.Email;
+            usuario.fecha_ingreso = UD.Date_In;
+            usuario.password = UD.Password;
+
+            db.tbl_usuarios.Add(usuario);
+            db.SaveChanges();
+
         }
     }
 }

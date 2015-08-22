@@ -16,10 +16,11 @@ namespace WcfService
         [OperationContract]
         string GetData(int value);
         [OperationContract]
-        void AddEstatus_Descrption(String Desccription);
-
+        bool AuthenticateUser(LoginData LD);
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        void AddEstatus_Descrption(String Desccription);
+        [OperationContract]
+        void InsertRegistrationData(UserData UD);
 
         // TODO: Add your service operations here
     }
@@ -27,23 +28,85 @@ namespace WcfService
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.
     [DataContract]
-    public class CompositeType
+    public class UserData
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        string fname = string.Empty;
+        string sname = string.Empty;
+        string fsurname = string.Empty;
+        string ssurname = string.Empty;
+        string email = string.Empty;
+        DateTime date;
+        string pass = string.Empty;
+
 
         [DataMember]
-        public bool BoolValue
+        public string First_Name
         {
-            get { return boolValue; }
-            set { boolValue = value; }
+            get { return fname; }
+            set { fname = value; }
         }
 
         [DataMember]
-        public string StringValue
+        public string Second_Name
         {
-            get { return stringValue; }
-            set { stringValue = value; }
+            get { return sname; }
+            set { sname = value; }
+        }
+
+        [DataMember]
+        public string First_Surname
+        {
+            get { return fsurname; }
+            set { fsurname = value; }
+        }
+
+        [DataMember]
+        public string Second_Surname
+        {
+            get { return ssurname; }
+            set { ssurname = value; }
+        }
+
+        [DataMember]
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+        
+        [DataMember]
+        public DateTime Date_In
+        {
+            get { return date; }
+            set { date = value; }
+        }
+        
+        [DataMember]
+        public string Password
+        {
+            get { return pass; }
+            set { pass = value; }
+        }
+    }
+
+    public class LoginData 
+    {
+        string email = string.Empty;
+        string password = string.Empty;
+
+        [DataMember]
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+
+        [DataMember]
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
         }
     }
 }
+

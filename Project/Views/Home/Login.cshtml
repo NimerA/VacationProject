@@ -1,4 +1,5 @@
-﻿
+﻿@model Project.Models.Login_Data
+
 @{
     Layout = null;
 }
@@ -29,26 +30,28 @@
                 <div class="text-right">
                     <a href="page_register" class="txt-default">Need an account?</a>
                 </div>
+                @using (Html.BeginForm()) 
+                { 
                 <div class="box">
                     <div class="box-content">
                         <div class="text-center">
                             <h3 class="page-header">Log in</h3>
                         </div>
-                        <form>
-                            <div class="form-group">
-                                <label class="control-label">Username</label>
-                                <input type="text" class="form-control" name="username" />
-                            </div>
-                            <div class="form-group">
+                        <div class="form-group">
+                                <label class="control-label">Email</label>
+                            @Html.TextBoxFor(x => x.Email, new { @class="form-control",type="email" })
+                        </div>
+                        <div class="form-group">
                                 <label class="control-label">Password</label>
-                                <input type="password" class="form-control" name="password" />
-                            </div>
-                            <div class="text-center">
+                                @Html.TextBoxFor(x => x.Password, new { @class = "form-control", type = "password" })
+                        </div>
+                        <div class="text-center">
                                 <button type="submit" class="btn btn-primary">Sign in</button>
-                            </div>
-                        </form>
+                        </div>
+                        @Html.ValidationSummary()
                     </div>
                 </div>
+                }    
             </div>
         </div>
     </div>

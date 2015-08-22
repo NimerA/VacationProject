@@ -1,4 +1,5 @@
-﻿
+﻿@model Project.Models.Index_Data
+
 @{
     Layout = null;
 }
@@ -12,15 +13,9 @@
     <meta name="author" content="Home">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <link href="~/Res/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
-    <link href="~/Res/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-    <link href="~/Res/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <link href="~/Res/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
-    <link href="~/Res/plugins/xcharts/xcharts.min.css" rel="stylesheet">
-    <link href="~/Res/plugins/select2/select2.css" rel="stylesheet">
     <link href="~/Res/css/style.css" rel="stylesheet">
 
 
@@ -80,8 +75,8 @@
                                         </div>
                                         <i class="fa fa-angle-down pull-right"></i>
                                         <div class="user-mini pull-right">
-                                            <span class="welcome">Welcome,</span>
-                                            <span>User Name</span>
+                                            <span class="welcome">Welcome!</span>
+                                            <span>@Html.DisplayFor(model => model.Email)</span>
                                         </div>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -116,7 +111,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="Login" >
                                                 <i class="fa fa-power-off"></i>
                                                 <span>Logout</span>
                                             </a>
@@ -171,9 +166,6 @@
     <script src="~/Res/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="~/Res/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="~/Res/plugins/justified-gallery/jquery.justifiedgallery.min.js"></script>
-    <script src="~/Res/plugins/tinymce/tinymce.min.js"></script>
-    <script src="~/Res/plugins/tinymce/jquery.tinymce.min.js"></script>
     <!-- All functions for this theme + document.ready processing -->
     <script src="~/Res/js/devoops.js"></script>
 </body>

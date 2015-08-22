@@ -2,6 +2,12 @@ body {
   color: #525252;
   background: #6AA6D6 url(../img/devoops_pattern_b10.png) 0 0 repeat;
 }
+.date-picker {
+    font-family: 'Righteous', cursive;
+    border-radius: 15px;
+    width: 100%;
+    text-align:center;
+}
 .body-expanded, .modal-open {
   overflow-y:hidden;
   margin-right: 15px;

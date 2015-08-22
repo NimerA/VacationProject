@@ -13,36 +13,55 @@
   <wsdl:message name="IService1_GetData_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDataResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_AuthenticateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AuthenticateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_AddEstatus_Descrption_InputMessage">
     <wsdl:part name="parameters" element="tns:AddEstatus_Descrption" />
   </wsdl:message>
   <wsdl:message name="IService1_AddEstatus_Descrption_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddEstatus_DescrptionResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  <wsdl:message name="IService1_InsertRegistrationData_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRegistrationData" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  <wsdl:message name="IService1_InsertRegistrationData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRegistrationDataResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AuthenticateUser" message="tns:IService1_AuthenticateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AuthenticateUserResponse" message="tns:IService1_AuthenticateUser_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="AddEstatus_Descrption">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddEstatus_Descrption" message="tns:IService1_AddEstatus_Descrption_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddEstatus_DescrptionResponse" message="tns:IService1_AddEstatus_Descrption_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetDataUsingDataContract">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    <wsdl:operation name="InsertRegistrationData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertRegistrationData" message="tns:IService1_InsertRegistrationData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertRegistrationDataResponse" message="tns:IService1_InsertRegistrationData_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetData">
       <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/AuthenticateUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -59,8 +78,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetDataUsingDataContract">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+    <wsdl:operation name="InsertRegistrationData">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertRegistrationData" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

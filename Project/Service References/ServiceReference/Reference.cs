@@ -15,18 +15,18 @@ namespace Project.ServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/WcfService")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="LoginData", Namespace="http://schemas.datacontract.org/2004/07/WcfService")]
     [System.SerializableAttribute()]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class LoginData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool BoolValueField;
+        private string EmailField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StringValueField;
+        private string PasswordField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -39,27 +39,168 @@ namespace Project.ServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue {
+        public string Email {
             get {
-                return this.BoolValueField;
+                return this.EmailField;
             }
             set {
-                if ((this.BoolValueField.Equals(value) != true)) {
-                    this.BoolValueField = value;
-                    this.RaisePropertyChanged("BoolValue");
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue {
+        public string Password {
             get {
-                return this.StringValueField;
+                return this.PasswordField;
             }
             set {
-                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
-                    this.StringValueField = value;
-                    this.RaisePropertyChanged("StringValue");
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UserData", Namespace="http://schemas.datacontract.org/2004/07/WcfService")]
+    [System.SerializableAttribute()]
+    public partial class UserData : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime Date_InField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string First_NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string First_SurnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Second_NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Second_SurnameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date_In {
+            get {
+                return this.Date_InField;
+            }
+            set {
+                if ((this.Date_InField.Equals(value) != true)) {
+                    this.Date_InField = value;
+                    this.RaisePropertyChanged("Date_In");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string First_Name {
+            get {
+                return this.First_NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.First_NameField, value) != true)) {
+                    this.First_NameField = value;
+                    this.RaisePropertyChanged("First_Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string First_Surname {
+            get {
+                return this.First_SurnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.First_SurnameField, value) != true)) {
+                    this.First_SurnameField = value;
+                    this.RaisePropertyChanged("First_Surname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Second_Name {
+            get {
+                return this.Second_NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Second_NameField, value) != true)) {
+                    this.Second_NameField = value;
+                    this.RaisePropertyChanged("Second_Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Second_Surname {
+            get {
+                return this.Second_SurnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Second_SurnameField, value) != true)) {
+                    this.Second_SurnameField = value;
+                    this.RaisePropertyChanged("Second_Surname");
                 }
             }
         }
@@ -84,17 +225,23 @@ namespace Project.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AuthenticateUser", ReplyAction="http://tempuri.org/IService1/AuthenticateUserResponse")]
+        bool AuthenticateUser(Project.ServiceReference.LoginData LD);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AuthenticateUser", ReplyAction="http://tempuri.org/IService1/AuthenticateUserResponse")]
+        System.Threading.Tasks.Task<bool> AuthenticateUserAsync(Project.ServiceReference.LoginData LD);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddEstatus_Descrption", ReplyAction="http://tempuri.org/IService1/AddEstatus_DescrptionResponse")]
         void AddEstatus_Descrption(string Desccription);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddEstatus_Descrption", ReplyAction="http://tempuri.org/IService1/AddEstatus_DescrptionResponse")]
         System.Threading.Tasks.Task AddEstatus_DescrptionAsync(string Desccription);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        Project.ServiceReference.CompositeType GetDataUsingDataContract(Project.ServiceReference.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertRegistrationData", ReplyAction="http://tempuri.org/IService1/InsertRegistrationDataResponse")]
+        void InsertRegistrationData(Project.ServiceReference.UserData UD);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<Project.ServiceReference.CompositeType> GetDataUsingDataContractAsync(Project.ServiceReference.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertRegistrationData", ReplyAction="http://tempuri.org/IService1/InsertRegistrationDataResponse")]
+        System.Threading.Tasks.Task InsertRegistrationDataAsync(Project.ServiceReference.UserData UD);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -132,6 +279,14 @@ namespace Project.ServiceReference {
             return base.Channel.GetDataAsync(value);
         }
         
+        public bool AuthenticateUser(Project.ServiceReference.LoginData LD) {
+            return base.Channel.AuthenticateUser(LD);
+        }
+        
+        public System.Threading.Tasks.Task<bool> AuthenticateUserAsync(Project.ServiceReference.LoginData LD) {
+            return base.Channel.AuthenticateUserAsync(LD);
+        }
+        
         public void AddEstatus_Descrption(string Desccription) {
             base.Channel.AddEstatus_Descrption(Desccription);
         }
@@ -140,12 +295,12 @@ namespace Project.ServiceReference {
             return base.Channel.AddEstatus_DescrptionAsync(Desccription);
         }
         
-        public Project.ServiceReference.CompositeType GetDataUsingDataContract(Project.ServiceReference.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContract(composite);
+        public void InsertRegistrationData(Project.ServiceReference.UserData UD) {
+            base.Channel.InsertRegistrationData(UD);
         }
         
-        public System.Threading.Tasks.Task<Project.ServiceReference.CompositeType> GetDataUsingDataContractAsync(Project.ServiceReference.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContractAsync(composite);
+        public System.Threading.Tasks.Task InsertRegistrationDataAsync(Project.ServiceReference.UserData UD) {
+            return base.Channel.InsertRegistrationDataAsync(UD);
         }
     }
 }
