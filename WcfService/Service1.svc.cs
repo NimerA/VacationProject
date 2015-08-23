@@ -27,7 +27,7 @@ namespace WcfService
 
         }
 
-        public bool AuthenticateUser(LoginData LD) 
+        public bool AuthenticateUser(LoginData LD)
         {
             /*
             vsystem_ndcEntities db = new vsystem_ndcEntities();
@@ -45,10 +45,11 @@ namespace WcfService
             return true;
         }
 
-        public void InsertRegistrationData(UserData UD) 
+        public void InsertRegistrationData(UserData UD)
         {
             vsystem_ndcEntities db = new vsystem_ndcEntities();
             tbl_usuarios usuario = new tbl_usuarios();
+            usuario.talento_humano = UD.User_Id;
             usuario.primer_nombre = UD.First_Name;
             usuario.segundo_nombre = UD.Second_Name;
             usuario.primer_apellido = UD.First_Surname;
@@ -56,10 +57,10 @@ namespace WcfService
             usuario.email = UD.Email;
             usuario.fecha_ingreso = UD.Date_In;
             usuario.password = UD.Password;
-
+            usuario.activo = false;
+            usuario.fecha_creacion = DateTime.Now;
             db.tbl_usuarios.Add(usuario);
             db.SaveChanges();
-
         }
     }
 }

@@ -104,6 +104,9 @@ namespace Project.ServiceReference {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string Second_SurnameField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IdField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -201,6 +204,19 @@ namespace Project.ServiceReference {
                 if ((object.ReferenceEquals(this.Second_SurnameField, value) != true)) {
                     this.Second_SurnameField = value;
                     this.RaisePropertyChanged("Second_Surname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_Id {
+            get {
+                return this.User_IdField;
+            }
+            set {
+                if ((this.User_IdField.Equals(value) != true)) {
+                    this.User_IdField = value;
+                    this.RaisePropertyChanged("User_Id");
                 }
             }
         }

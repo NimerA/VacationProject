@@ -13,9 +13,14 @@
     <meta name="author" content="Home">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="~/Res/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Res/plugins/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="~/Res/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link href="~/Res/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="~/Res/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="~/Res/plugins/xcharts/xcharts.min.css" rel="stylesheet">
+    <link href="~/Res/plugins/select2/select2.css" rel="stylesheet">
     <link href="~/Res/css/style.css" rel="stylesheet">
 
 
@@ -143,6 +148,29 @@
                             <span class="hidden-xs">Calendar</span>
                         </a>
                     </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <span class="hidden-xs">Forms</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="ajax-link" href="~/Res/ajax/forms_elements.html">Elements</a></li>
+                            <li><a class="ajax-link" href="~/Res/ajax/forms_layouts.html">Layouts</a></li>
+                            <li><a class="ajax-link" href="~/Res/ajax/forms_file_uploader.html">File Uploader</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fa fa-wrench"></i>
+                            <span class="hidden-xs">Administration</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="ajax-link" href="~/Res/ajax/table_users.html">Usuarios</a></li>
+                            <li><a href="#">Roles</a></li>
+                            <li><a href="#">Departamentos</a></li>
+                            <li><a href="#">Peticiones</a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a class="ajax-link" href="~/Res/ajax/options.html">
                             <i class="fa fa-tasks"></i>
@@ -166,6 +194,9 @@
     <script src="~/Res/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="~/Res/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="~/Res/plugins/justified-gallery/jquery.justifiedgallery.min.js"></script>
+    <script src="~/Res/plugins/tinymce/tinymce.min.js"></script>
+    <script src="~/Res/plugins/tinymce/jquery.tinymce.min.js"></script>
     <!-- All functions for this theme + document.ready processing -->
     <script src="~/Res/js/devoops.js"></script>
 </body>

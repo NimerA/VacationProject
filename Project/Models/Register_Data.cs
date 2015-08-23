@@ -8,6 +8,8 @@ namespace Project.Models
 {
     public class Register_Data
     {
+        [Required(ErrorMessage = "Please enter your Id")]
+        public int User_Id { get; set; }
         [Required(ErrorMessage = "Please enter your First Name")]
         public string First_Name { get; set; }
         [Required(ErrorMessage = "Please enter your Second Name")]

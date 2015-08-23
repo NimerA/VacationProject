@@ -36,8 +36,10 @@ namespace Project.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 Service1Client client = new Service1Client();
                 UserData userdata = new UserData();
+                userdata.User_Id = RD.User_Id;
                 userdata.First_Name = RD.First_Name;
                 userdata.Second_Name = RD.Second_Name;
                 userdata.First_Surname = RD.First_Surname;
@@ -47,7 +49,7 @@ namespace Project.Controllers
                 userdata.Password = RD.Password;
                 client.InsertRegistrationData(userdata);
                 client.Close();
-                return View("index", RD);
+                return View("index");
             }
             else 
             {
@@ -68,6 +70,7 @@ namespace Project.Controllers
             
             if (ModelState.IsValid)
             {
+                
                 Service1Client client = new Service1Client();
                 LoginData auth = new LoginData();
                 auth.Email = LD.Email;
@@ -77,10 +80,12 @@ namespace Project.Controllers
                     Session["Email"] = LD.Email;
                     return index();
                 }
-                else 
+                else
                 {
+
                     return View();
                 }
+                
 
             }
             else 

@@ -30,6 +30,7 @@ namespace WcfService
     [DataContract]
     public class UserData
     {
+        int id = 0;
         string fname = string.Empty;
         string sname = string.Empty;
         string fsurname = string.Empty;
@@ -38,7 +39,12 @@ namespace WcfService
         DateTime date;
         string pass = string.Empty;
 
-
+        [DataMember]
+        public int User_Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         [DataMember]
         public string First_Name
         {
@@ -73,14 +79,14 @@ namespace WcfService
             get { return email; }
             set { email = value; }
         }
-        
+
         [DataMember]
         public DateTime Date_In
         {
             get { return date; }
             set { date = value; }
         }
-        
+
         [DataMember]
         public string Password
         {
@@ -89,7 +95,7 @@ namespace WcfService
         }
     }
 
-    public class LoginData 
+    public class LoginData
     {
         string email = string.Empty;
         string password = string.Empty;

@@ -42,7 +42,7 @@ function checkPass() {
 function LoadCalendarScript(callback){
 	function LoadFullCalendarScript(){
 		if(!$.fn.fullCalendar){
-		    $.getScript('~/Res/plugins/fullcalendar/fullcalendar.js', callback);
+		    $.getScript('/Res/plugins/fullcalendar/fullcalendar.js', callback);
 		}
 		else {
 			if (callback && typeof(callback) === "function") {
@@ -51,7 +51,7 @@ function LoadCalendarScript(callback){
 		}
 	}
 	if (!$.fn.moment){
-		$.getScript('~Res/plugins/moment/moment.min.js', LoadFullCalendarScript);
+		$.getScript('/Res/plugins/moment/moment.min.js', LoadFullCalendarScript);
 	}
 	else {
 		LoadFullCalendarScript();
@@ -77,7 +77,7 @@ function LoadOpenLayersScript(callback){
 //
 function LoadTimePickerScript(callback){
 	if (!$.fn.timepicker){
-		$.getScript('~/Res/plugins/jquery-ui-timepicker-addon/jquery-ui-timepicker-addon.min.js', callback);
+		$.getScript('/Res/plugins/jquery-ui-timepicker-addon/jquery-ui-timepicker-addon.min.js', callback);
 	}
 	else {
 		if (callback && typeof(callback) === "function") {
@@ -91,7 +91,7 @@ function LoadTimePickerScript(callback){
 //
 function LoadBootstrapValidatorScript(callback){
 	if (!$.fn.bootstrapValidator){
-		$.getScript('~/Res/plugins/bootstrapvalidator/bootstrapValidator.min.js', callback);
+		$.getScript('/Res/plugins/bootstrapvalidator/bootstrapValidator.min.js', callback);
 	}
 	else {
 		if (callback && typeof(callback) === "function") {
@@ -105,7 +105,7 @@ function LoadBootstrapValidatorScript(callback){
 //
 function LoadSelect2Script(callback){
 	if (!$.fn.select2){
-		$.getScript('~/Res/plugins/select2/select2.min.js', callback);
+		$.getScript('/Res/plugins/select2/select2.min.js', callback);
 	}
 	else {
 		if (callback && typeof(callback) === "function") {
@@ -119,10 +119,10 @@ function LoadSelect2Script(callback){
 //
 function LoadDataTablesScripts(callback){
 	function LoadDatatables(){
-		$.getScript('~/Res/plugins/datatables/jquery.dataTables.js', function(){
-			$.getScript('~/Res/plugins/datatables/ZeroClipboard.js', function(){
-				$.getScript('~/Res/plugins/datatables/TableTools.js', function(){
-					$.getScript('~/Res/plugins/datatables/dataTables.bootstrap.js', callback);
+		$.getScript('/Res/plugins/datatables/jquery.dataTables.js', function(){
+			$.getScript('/Res/plugins/datatables/ZeroClipboard.js', function(){
+				$.getScript('/Res/plugins/datatables/TableTools.js', function(){
+					$.getScript('/Res/plugins/datatables/dataTables.bootstrap.js', callback);
 				});
 			});
 		});
@@ -142,7 +142,7 @@ function LoadDataTablesScripts(callback){
 //
 function LoadFineUploader(callback){
 	if (!$.fn.fineuploader){
-		$.getScript('~/Res/plugins/fineuploader/jquery.fineuploader-5.0.1.min.js', callback);
+		$.getScript('/Res/plugins/fineuploader/jquery.fineuploader-5.0.1.min.js', callback);
 	}
 	else {
 		if (callback && typeof(callback) === "function") {
@@ -157,11 +157,11 @@ function LoadFineUploader(callback){
 //
 function LoadXChartScript(callback){
 	function LoadXChart(){
-		$.getScript('~/Res/plugins/xcharts/xcharts.min.js', callback);
+		$.getScript('/Res/plugins/xcharts/xcharts.min.js', callback);
 	}
 	function LoadD3Script(){
 		if (!$.fn.d3){
-			$.getScript('~/Res/plugins/d3/d3.v3.min.js', LoadXChart)
+			$.getScript('/Res/plugins/d3/d3.v3.min.js', LoadXChart)
 		}
 		else {
 			LoadXChart();
@@ -182,13 +182,13 @@ function LoadXChartScript(callback){
 //
 function LoadFlotScripts(callback){
 	function LoadFlotScript(){
-		$.getScript('~/Res/plugins/flot/jquery.flot.js', LoadFlotResizeScript);
+		$.getScript('/Res/plugins/flot/jquery.flot.js', LoadFlotResizeScript);
 	}
 	function LoadFlotResizeScript(){
-		$.getScript('~/Res/plugins/flot/jquery.flot.resize.js', LoadFlotTimeScript);
+		$.getScript('/Res/plugins/flot/jquery.flot.resize.js', LoadFlotTimeScript);
 	}
 	function LoadFlotTimeScript(){
-		$.getScript('~/Res/plugins/flot/jquery.flot.time.js', callback);
+		$.getScript('/Res/plugins/flot/jquery.flot.time.js', callback);
 	}
 	if (!$.fn.flot){
 		LoadFlotScript();
@@ -207,7 +207,7 @@ function LoadFlotScripts(callback){
 function LoadMorrisScripts(callback){
 	function LoadMorrisScript(){
 		if(!$.fn.Morris){
-			$.getScript('~/Res/plugins/morris/morris.min.js', callback);
+			$.getScript('/Res/plugins/morris/morris.min.js', callback);
 		}
 		else {
 			if (callback && typeof(callback) === "function") {
@@ -216,7 +216,7 @@ function LoadMorrisScripts(callback){
 		}
 	}
 	if (!$.fn.raphael){
-		$.getScript('~/Res/plugins/raphael/raphael-min.js', LoadMorrisScript);
+		$.getScript('/Res/plugins/raphael/raphael-min.js', LoadMorrisScript);
 	}
 	else {
 		LoadMorrisScript();
@@ -228,7 +228,7 @@ function LoadMorrisScripts(callback){
 //
 function LoadFancyboxScript(callback){
 	if (!$.fn.fancybox){
-		$.getScript('~/Res/plugins/fancybox/jquery.fancybox.js', callback);
+		$.getScript('/Res/plugins/fancybox/jquery.fancybox.js', callback);
 	}
 	else {
 		if (callback && typeof(callback) === "function") {
@@ -242,7 +242,7 @@ function LoadFancyboxScript(callback){
 //
 function LoadKnobScripts(callback){
 	if(!$.fn.knob){
-		$.getScript('~/Res/plugins/jQuery-Knob/jquery.knob.js', callback);
+		$.getScript('/Res/plugins/jQuery-Knob/jquery.knob.js', callback);
 	}
 	else {
 		if (callback && typeof(callback) === "function") {
@@ -256,7 +256,7 @@ function LoadKnobScripts(callback){
 //
 function LoadSparkLineScript(callback){
 	if(!$.fn.sparkline){
-		$.getScript('~/Res/plugins/sparkline/jquery.sparkline.min.js', callback);
+		$.getScript('/Res/plugins/sparkline/jquery.sparkline.min.js', callback);
 	}
 	else {
 		if (callback && typeof(callback) === "function") {
@@ -1650,7 +1650,7 @@ function TestTable3(){
 			"sLengthMenu": '_MENU_'
 		},
 		"oTableTools": {
-			"sSwfPath": "~/Res/plugins/datatables/copy_csv_xls_pdf.swf",
+			"sSwfPath": "/Res/plugins/datatables/copy_csv_xls_pdf.swf",
 			"aButtons": [
 				"copy",
 				"print",
@@ -2330,7 +2330,7 @@ $(document).ready(function () {
 	});
 	var ajax_url = location.hash.replace(/^#/, '');
 	if (ajax_url.length < 1) {
-		ajax_url = 'ajax/dashboard.html';
+		ajax_url = '/Res/ajax/dashboard.html';
 	}
 	LoadAjaxContent(ajax_url);
 	$('.main-menu').on('click', 'a', function (e) {
@@ -2444,7 +2444,7 @@ $(document).ready(function () {
 		if (e.keyCode == 13){
 			e.preventDefault();
 			$('#content').removeClass('full-content');
-			ajax_url = 'ajax/page_search.html';
+			ajax_url = '/Res/ajax/page_search.html';
 			window.location.hash = ajax_url;
 			LoadAjaxContent(ajax_url);
 		}

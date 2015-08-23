@@ -122,6 +122,7 @@
     <Content Include="Res\ajax\tables_beauty.html" />
     <Content Include="Res\ajax\tables_datatables.html" />
     <Content Include="Res\ajax\tables_simple.html" />
+    <Content Include="Res\ajax\table_users.html" />
     <Content Include="Res\ajax\typography.html" />
     <Content Include="Res\ajax\ui_buttons.html" />
     <Content Include="Res\ajax\ui_grid.html" />
@@ -531,7 +532,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
