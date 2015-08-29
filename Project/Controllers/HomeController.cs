@@ -10,9 +10,14 @@ namespace Project.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public PartialViewResult _Roles() 
         {
-            return PartialView("_Roles");
+            Service1Client client = new Service1Client();
+            List<tbl_roles> list = new List<tbl_roles>();
+            list.AddRange(client.GetRolList());
+            client.Close();
+            return PartialView("_Roles",list);
         }
         public PartialViewResult _Usuarios()
         {

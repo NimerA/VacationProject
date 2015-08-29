@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Project.Models.RolModel>
+﻿@model IEnumerable<Project.ServiceReference.tbl_roles>
 
 <!--Start Breadcrumb-->
 <div class="row">
@@ -153,12 +153,12 @@
                     <tbody>
                         @try
                         {
-                            foreach (var item in Model) 
+                            foreach(var item in Model) 
                             {
                                 <tr>
-                                    <th> @item.rolesid</th>
-                                    <th> @item.descripcion</th>
-                                    <th> @item.activo</th>
+                                    <th>@item.rolesid</th>
+                                    <th>@item.descripcion</th>
+                                    <th>@item.activo</th>
                                 </tr>
                             }   
                         }
