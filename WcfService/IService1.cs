@@ -20,7 +20,13 @@ namespace WcfService
         [OperationContract]
         void AddEstatus_Descrption(String Desccription);
         [OperationContract]
-        void InsertRegistrationData(UserData UD);
+        bool InsertRegistrationData(UserData UD);
+        [OperationContract]
+        List<tbl_roles> GetRolList();
+        [OperationContract]
+        void PostDepartmento(tbl_departamento departamento);
+        [OperationContract]
+        void PostRol(tbl_roles rol);
 
         // TODO: Add your service operations here
     }
@@ -114,5 +120,6 @@ namespace WcfService
             set { password = value; }
         }
     }
+
 }
 

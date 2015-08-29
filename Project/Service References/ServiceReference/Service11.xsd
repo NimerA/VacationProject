@@ -50,7 +50,21 @@
   </xs:element>
   <xs:element name="InsertRegistrationDataResponse">
     <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertRegistrationDataResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRolList">
+    <xs:complexType>
       <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRolListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="GetRolListResult" nillable="true" type="q3:ArrayOftbl_roles" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

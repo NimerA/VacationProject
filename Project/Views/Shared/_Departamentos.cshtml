@@ -1,0 +1,198 @@
+﻿<!--Start Breadcrumb-->
+<div class="row">
+    <div id="breadcrumb" class="col-xs-12">
+        <ol class="breadcrumb">
+            <li><a href="index">Home</a></li>
+            <li><a href="#">Departamentos</a></li>
+        </ol>
+    </div>
+</div>
+<!--End Breadcrumb-->
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <div class="box-name">
+                    <i class="fa fa-plus-circle"></i>
+                    <span>Agregar Departamento</span>
+                </div>
+                <div class="box-icons">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="expand-link">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+                <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" placeholder="Escriba Aqui" data-toggle="tooltip" data-placement="bottom">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Seleccione Estatus</label>
+                        <div class="col-sm-4">
+                            <select id="s2_with_tag" class="populate placeholder">
+                                <option>Activo</option>
+                                <option>Descativado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="form-styles">Descripcion</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="wysiwig_simple"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-2">
+                            <button type="submit" class="btn btn-primary btn-label-left">
+                                <span><i class="fa fa-clock-o"></i></span>
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <div class="box-name">
+                    <i class="fa fa-table"></i>
+                    <span>Departamentos</span>
+                </div>
+                <div class="box-icons">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="expand-link">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+                <div class="no-move"></div>
+            </div>
+            <div class="box-content no-padding table-responsive">
+                <table class="table table-bordered table-striped table-hover table-heading table-datatable" id="datatable-2">
+                    <thead>
+                        <tr>
+                            <th><label><input type="text" name="search_rate" value="Departamento" class="search_init" /></label></th>
+                            <th><label><input type="text" name="search_name" value="Descripcion" class="search_init" /></label></th>
+                            <th><label><input type="text" name="search_votes" value="Estatus" class="search_init" /></label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hitman</td>
+                            <td>Puppy</td>
+                            <td>0.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Aseador</td>
+                            <td>Bodhi Linux</td>
+                            <td>0.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Striper</td>
+                            <td>SolusOS</td>
+                            <td>0.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Barrendero</td>
+                            <td>Zorin OS</td>
+                            <td>0.1%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Departamento</th>
+                            <th>Descripcion</th>
+                            <th>Estatus</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <div class="box-name hass-error">
+                    <i class="fa fa-exclamation"></i>
+                    <span>Elimina Departamento</span>
+                </div>
+                <div class="box-icons">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="expand-link">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                    <a class="close-link">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+                <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" placeholder="Departamento a Borrar" data-toggle="tooltip" data-placement="bottom">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-2">
+                            <button type="submit" class="btn btn-danger btn-label-left">
+                                <span><i class="fa fa-clock-o"></i></span>
+                                Borrar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+// Run Datables plugin and create 3 variants of settings
+function AllTables(){
+    TestTable2();
+	LoadSelect2Script(MakeSelect2);
+}
+function MakeSelect2(){
+	$('select').select2();
+	$('.dataTables_filter').each(function(){
+		$(this).find('label input[type=text]').attr('placeholder', 'Search');
+	});
+}
+$(document).ready(function() {
+	// Load Datatables and run plugin on tables
+	LoadDataTablesScripts(AllTables);
+	// Add Drag-n-Drop feature
+	WinMove();
+});
+</script>

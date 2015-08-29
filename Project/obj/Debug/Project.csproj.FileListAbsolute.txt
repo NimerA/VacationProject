@@ -41,4 +41,5 @@ C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Pro
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\Project.pdb
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\obj\Debug\Project.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\obj\Debug\Project.pdb
+C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\MySql.Data.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache

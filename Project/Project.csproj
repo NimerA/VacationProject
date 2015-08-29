@@ -47,6 +47,10 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\MySql.Data.6.9.7\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -109,8 +113,6 @@
     <Content Include="Res\ajax\maps.html" />
     <Content Include="Res\ajax\map_fullscreen.html" />
     <Content Include="Res\ajax\options.html" />
-    <Content Include="Res\ajax\page_404.html" />
-    <Content Include="Res\ajax\page_500.html" />
     <Content Include="Res\ajax\page_contacts.html" />
     <Content Include="Res\ajax\page_feed.html" />
     <Content Include="Res\ajax\page_invoice.html" />
@@ -122,7 +124,6 @@
     <Content Include="Res\ajax\tables_beauty.html" />
     <Content Include="Res\ajax\tables_datatables.html" />
     <Content Include="Res\ajax\tables_simple.html" />
-    <Content Include="Res\ajax\table_users.html" />
     <Content Include="Res\ajax\typography.html" />
     <Content Include="Res\ajax\ui_buttons.html" />
     <Content Include="Res\ajax\ui_grid.html" />
@@ -141,6 +142,7 @@
     <Content Include="Res\img\chevron-right.png" />
     <Content Include="Res\img\devoops_getdata.gif" />
     <Content Include="Res\img\devoops_pattern_b10.png" />
+    <Content Include="Res\img\Doge.png" />
     <Content Include="Res\img\logo-200.png" />
     <Content Include="Res\img\logo.png" />
     <Content Include="Res\img\sort-asc.png" />
@@ -525,6 +527,9 @@
     <Content Include="Scripts\jquery-1.8.0.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Service References\ServiceReference\Project.ServiceReference.tbl_roles.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\ServiceReference\Service1.disco" />
     <None Include="Service References\ServiceReference\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference\configuration.svcinfo" />
@@ -545,6 +550,7 @@
     <Compile Include="Models\Index_Data.cs" />
     <Compile Include="Models\Login_Data.cs" />
     <Compile Include="Models\Register_Data.cs" />
+    <Compile Include="Models\RolModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -586,6 +592,10 @@
     <Content Include="Views\Home\index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\page_register.cshtml" />
+    <Content Include="Views\Home\page_500.cshtml" />
+    <Content Include="Views\Shared\_Roles.cshtml" />
+    <Content Include="Views\Shared\_Departamentos.cshtml" />
+    <Content Include="Views\Shared\_Usuarios.cshtml" />
     <None Include="Service References\ServiceReference\Service1.wsdl" />
     <None Include="Service References\ServiceReference\Service1.xsd">
       <SubType>Designer</SubType>
@@ -596,6 +606,7 @@
     <None Include="Service References\ServiceReference\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Home\page_404.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

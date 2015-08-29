@@ -10,19 +10,39 @@ namespace Project.Controllers
 {
     public class HomeController : Controller
     {
+        public PartialViewResult _Roles() 
+        {
+            return PartialView("_Roles");
+        }
+        public PartialViewResult _Usuarios()
+        {
+            return PartialView("_Usuarios");
+        }
+        public PartialViewResult _Departamentos()
+        {
+            return PartialView("_Departamentos");
+        }
 
-        public ActionResult index()
+        public ViewResult index()
         {
             Index_Data ID = new Index_Data();
-            string sessionname = "No Session";
             if (Session["Email"] != null) 
             {
-                sessionname = Session["Email"].ToString();
+                ID.Email = Session["Email"].ToString();
+                return View("index", ID);
             }
+            return View("page_500");
+            
+        }
 
-            ID.Email = sessionname;
+        public ViewResult page_500() 
+        {
+            return View();
+        }
 
-            return View("index",ID);
+        public ViewResult page_404()
+        {
+            return View();
         }
 
         [HttpGet]
@@ -47,9 +67,14 @@ namespace Project.Controllers
                 userdata.Email = RD.Email;
                 userdata.Date_In = RD.Date_In;
                 userdata.Password = RD.Password;
-                client.InsertRegistrationData(userdata);
+                if (client.InsertRegistrationData(userdata)) 
+                {
+                    client.Close();
+                    return Login();
+                }
+                
                 client.Close();
-                return View("index");
+                return page_500();
             }
             else 
             {
@@ -62,9 +87,12 @@ namespace Project.Controllers
         public ActionResult Login()
         {
             Session.Abandon();
-            return View();
+            Session["Email"] = null;
+            
+            return View("Login");
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Login(Login_Data LD)
         {
             
@@ -82,7 +110,8 @@ namespace Project.Controllers
                 }
                 else
                 {
-
+                    string error_message = "Wrong Email or Password";
+                    ViewBag.LoginError = error_message;
                     return View();
                 }
                 

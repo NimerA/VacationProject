@@ -273,10 +273,11 @@ function LoadSparkLineScript(callback){
 function LoadAjaxContent(url){
 	$('.preloader').show();
 	$.ajax({
-		mimeType: 'text/html; charset=utf-8', // ! Need set mimeType only when run from local file
+	    //mimeType: 'text/html; charset=utf-8', // ! Need set mimeType only when run from local file
+        contentType: 'application/html; charset=utf-8',
 		url: url,
 		type: 'GET',
-		success: function(data) {
+		success: function (data) {
 			$('#ajax-content').html(data);
 			$('.preloader').hide();
 		},
