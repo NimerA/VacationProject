@@ -43,3 +43,25 @@ C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Pro
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\obj\Debug\Project.pdb
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\bin\MySql.Data.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\Project.dll.config
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\Project.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\Project.pdb
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\EntityFramework.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\MySql.Data.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.Helpers.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.Mvc.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.Razor.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.WebPages.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\EntityFramework.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.Helpers.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.Mvc.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.Razor.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.WebPages.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\obj\Debug\Project.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\Project\obj\Debug\Project.pdb

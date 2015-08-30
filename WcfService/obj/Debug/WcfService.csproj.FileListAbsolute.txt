@@ -7,3 +7,12 @@ C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\Wcf
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\obj\Debug\WcfService.pdb
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\bin\MySql.Data.dll
 C:\Users\nimer\Documents\Visual Studio 2013\Projects\Proyect\VacationProject\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\bin\WcfService.dll.config
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\bin\WcfService.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\bin\WcfService.pdb
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\bin\EntityFramework.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\bin\MySql.Data.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\bin\EntityFramework.xml
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\obj\Debug\WcfService.dll
+C:\Users\Ivan Canales\Documents\GitHub\VacationProject\WcfService\obj\Debug\WcfService.pdb

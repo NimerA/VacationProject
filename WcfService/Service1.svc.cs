@@ -13,11 +13,118 @@ namespace WcfService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        
+
         public List<tbl_roles> GetRolList()
         {
-            vsystem_ndcEntities db = new vsystem_ndcEntities();
-            List<tbl_roles> list = db.tbl_roles.ToList();
+            string connectionString = "SERVER=104.236.126.219;DATABASE=vsystem_ndc;UID=ndc;PASSWORD=ndc01;";
+            List<tbl_roles> list = new List<tbl_roles>();
+            tbl_roles temp;
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            string query = "SELECT * FROM tbl_roles";
+
+            connection.Open();
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                temp = new tbl_roles();
+                temp.activo = (dataReader["activo"].ToString().Equals("1") ? true : false);
+                temp.descripcion = dataReader["descripcion"].ToString();
+                temp.rolesid = (int)dataReader["rolesid"];
+                list.Add(temp);
+
+            }
+            dataReader.Close();
+            connection.Close();
+
+            return list;
+        }
+
+        public List<tbl_permisos> GetPermisosList()
+        {
+            string connectionString = "SERVER=104.236.126.219;DATABASE=vsystem_ndc;UID=ndc;PASSWORD=ndc01;";
+            List<tbl_permisos> list = new List<tbl_permisos>();
+            tbl_permisos temp;
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            string query = "SELECT * FROM tbl_permisos";
+
+            connection.Open();
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                temp = new tbl_permisos();
+                temp.activo = (dataReader["activo"].ToString().Equals("1") ? true : false);
+                temp.descripcion = dataReader["descripcion"].ToString();
+                temp.permisosid = (int)dataReader["permisosid"];
+                list.Add(temp);
+
+            }
+            dataReader.Close();
+            connection.Close();
+
+            return list;
+        }
+
+        public List<tbl_departamento> GetDepartamentosList()
+        {
+            string connectionString = "SERVER=104.236.126.219;DATABASE=vsystem_ndc;UID=ndc;PASSWORD=ndc01;";
+            List<tbl_departamento> list = new List<tbl_departamento>();
+            tbl_departamento temp;
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            string query = "SELECT * FROM tbl_departamento";
+
+            connection.Open();
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                temp = new tbl_departamento();
+                temp.activo = (dataReader["activo"].ToString().Equals("1") ? true : false);
+                temp.descripcion = dataReader["descripcion"].ToString();
+                temp.departamentoid = (int)dataReader["departamentoid"];
+                list.Add(temp);
+
+            }
+            dataReader.Close();
+            connection.Close();
+
+            return list;
+        }
+
+        public List<tbl_usuarios> GetUsuariosList()
+        {
+            string connectionString = "SERVER=104.236.126.219;DATABASE=vsystem_ndc;UID=ndc;PASSWORD=ndc01;";
+            List<tbl_usuarios> list = new List<tbl_usuarios>();
+            tbl_usuarios temp;
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            string query = "SELECT * FROM tbl_usuarios";
+
+            connection.Open();
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+            while (dataReader.Read())
+            {
+                temp = new tbl_usuarios();
+                temp.activo = (dataReader["activo"].ToString().Equals("1") ? true : false);
+                temp.email = dataReader["email"].ToString();
+                temp.fecha_creacion = (DateTime)dataReader["fecha_creacion"];
+                temp.fecha_ingreso = (DateTime)dataReader["fecha_ingreso"];
+                temp.primer_apellido = dataReader["primer_apellido"].ToString();
+                temp.segundo_apellido = dataReader["segundo_apellido"].ToString();
+                temp.primer_nombre = dataReader["primer_nombre"].ToString();
+                temp.segundo_nombre = dataReader["segundo_nombre"].ToString();
+                temp.password = dataReader["password"].ToString();
+                list.Add(temp);
+
+            }
+            dataReader.Close();
+            connection.Close();
+
             return list;
         }
         public string GetData(int value)

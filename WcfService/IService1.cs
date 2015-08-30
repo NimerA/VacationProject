@@ -27,6 +27,12 @@ namespace WcfService
         void PostDepartmento(tbl_departamento departamento);
         [OperationContract]
         void PostRol(tbl_roles rol);
+        [OperationContract]
+        List<tbl_usuarios> GetUsuariosList();
+        [OperationContract]
+        List<tbl_departamento> GetDepartamentosList();
+        [OperationContract]
+        List<tbl_permisos> GetPermisosList();
 
         // TODO: Add your service operations here
     }
