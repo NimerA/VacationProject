@@ -13,6 +13,7 @@ namespace WcfService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+        
         public List<tbl_roles> GetRolList()
         {
             vsystem_ndcEntities db = new vsystem_ndcEntities();

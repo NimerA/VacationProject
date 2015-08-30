@@ -1786,6 +1786,18 @@ namespace Project.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetRolList", ReplyAction="http://tempuri.org/IService1/GetRolListResponse")]
         System.Threading.Tasks.Task<Project.ServiceReference.tbl_roles[]> GetRolListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PostDepartmento", ReplyAction="http://tempuri.org/IService1/PostDepartmentoResponse")]
+        void PostDepartmento(Project.ServiceReference.tbl_departamento departamento);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PostDepartmento", ReplyAction="http://tempuri.org/IService1/PostDepartmentoResponse")]
+        System.Threading.Tasks.Task PostDepartmentoAsync(Project.ServiceReference.tbl_departamento departamento);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PostRol", ReplyAction="http://tempuri.org/IService1/PostRolResponse")]
+        void PostRol(Project.ServiceReference.tbl_roles rol);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PostRol", ReplyAction="http://tempuri.org/IService1/PostRolResponse")]
+        System.Threading.Tasks.Task PostRolAsync(Project.ServiceReference.tbl_roles rol);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1853,6 +1865,22 @@ namespace Project.ServiceReference {
         
         public System.Threading.Tasks.Task<Project.ServiceReference.tbl_roles[]> GetRolListAsync() {
             return base.Channel.GetRolListAsync();
+        }
+        
+        public void PostDepartmento(Project.ServiceReference.tbl_departamento departamento) {
+            base.Channel.PostDepartmento(departamento);
+        }
+        
+        public System.Threading.Tasks.Task PostDepartmentoAsync(Project.ServiceReference.tbl_departamento departamento) {
+            return base.Channel.PostDepartmentoAsync(departamento);
+        }
+        
+        public void PostRol(Project.ServiceReference.tbl_roles rol) {
+            base.Channel.PostRol(rol);
+        }
+        
+        public System.Threading.Tasks.Task PostRolAsync(Project.ServiceReference.tbl_roles rol) {
+            return base.Channel.PostRolAsync(rol);
         }
     }
 }

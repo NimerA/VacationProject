@@ -100,7 +100,7 @@ namespace WcfService
             set { pass = value; }
         }
     }
-
+    [DataContract]
     public class LoginData
     {
         string email = string.Empty;
