@@ -21,18 +21,26 @@ namespace WcfService
         void AddEstatus_Descrption(String Desccription);
         [OperationContract]
         bool InsertRegistrationData(UserData UD);
+        //=================================== GET LIST ==========================================
         [OperationContract]
         List<tbl_roles> GetRolList();
-        [OperationContract]
-        void PostDepartmento(tbl_departamento departamento);
-        [OperationContract]
-        void PostRol(tbl_roles rol);
         [OperationContract]
         List<tbl_usuarios> GetUsuariosList();
         [OperationContract]
         List<tbl_departamento> GetDepartamentosList();
         [OperationContract]
         List<tbl_permisos> GetPermisosList();
+        //=================================== POST ITEM ==========================================
+        [OperationContract]
+        void PostDepartmento(tbl_departamento departamento);
+        [OperationContract]
+        void PostRol(tbl_roles rol);
+        //=================================== DELETE ITEM ==========================================
+        [OperationContract]
+        int DeleteRol(int Id);
+        [OperationContract]
+        int DeleteDepartamento(int Id);
+        //!!============================= Functions end Here =====================================!!
 
         // TODO: Add your service operations here
     }

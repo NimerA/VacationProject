@@ -1798,6 +1798,24 @@ namespace Project.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PostRol", ReplyAction="http://tempuri.org/IService1/PostRolResponse")]
         System.Threading.Tasks.Task PostRolAsync(Project.ServiceReference.tbl_roles rol);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUsuariosList", ReplyAction="http://tempuri.org/IService1/GetUsuariosListResponse")]
+        Project.ServiceReference.tbl_usuarios[] GetUsuariosList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUsuariosList", ReplyAction="http://tempuri.org/IService1/GetUsuariosListResponse")]
+        System.Threading.Tasks.Task<Project.ServiceReference.tbl_usuarios[]> GetUsuariosListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDepartamentosList", ReplyAction="http://tempuri.org/IService1/GetDepartamentosListResponse")]
+        Project.ServiceReference.tbl_departamento[] GetDepartamentosList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDepartamentosList", ReplyAction="http://tempuri.org/IService1/GetDepartamentosListResponse")]
+        System.Threading.Tasks.Task<Project.ServiceReference.tbl_departamento[]> GetDepartamentosListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetPermisosList", ReplyAction="http://tempuri.org/IService1/GetPermisosListResponse")]
+        Project.ServiceReference.tbl_permisos[] GetPermisosList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetPermisosList", ReplyAction="http://tempuri.org/IService1/GetPermisosListResponse")]
+        System.Threading.Tasks.Task<Project.ServiceReference.tbl_permisos[]> GetPermisosListAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1881,6 +1899,30 @@ namespace Project.ServiceReference {
         
         public System.Threading.Tasks.Task PostRolAsync(Project.ServiceReference.tbl_roles rol) {
             return base.Channel.PostRolAsync(rol);
+        }
+        
+        public Project.ServiceReference.tbl_usuarios[] GetUsuariosList() {
+            return base.Channel.GetUsuariosList();
+        }
+        
+        public System.Threading.Tasks.Task<Project.ServiceReference.tbl_usuarios[]> GetUsuariosListAsync() {
+            return base.Channel.GetUsuariosListAsync();
+        }
+        
+        public Project.ServiceReference.tbl_departamento[] GetDepartamentosList() {
+            return base.Channel.GetDepartamentosList();
+        }
+        
+        public System.Threading.Tasks.Task<Project.ServiceReference.tbl_departamento[]> GetDepartamentosListAsync() {
+            return base.Channel.GetDepartamentosListAsync();
+        }
+        
+        public Project.ServiceReference.tbl_permisos[] GetPermisosList() {
+            return base.Channel.GetPermisosList();
+        }
+        
+        public System.Threading.Tasks.Task<Project.ServiceReference.tbl_permisos[]> GetPermisosListAsync() {
+            return base.Channel.GetPermisosListAsync();
         }
     }
 }

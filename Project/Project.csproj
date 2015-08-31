@@ -530,6 +530,15 @@
     <Content Include="Service References\ServiceReference\Project.ServiceReference.tbl_roles.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\ServiceReference\Project.ServiceReference.tbl_departamento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference\Project.ServiceReference.tbl_permisos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference\Project.ServiceReference.tbl_usuarios.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\ServiceReference\Service1.disco" />
     <None Include="Service References\ServiceReference\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference\configuration.svcinfo" />
@@ -550,7 +559,6 @@
     <Compile Include="Models\Index_Data.cs" />
     <Compile Include="Models\Login_Data.cs" />
     <Compile Include="Models\Register_Data.cs" />
-    <Compile Include="Models\RolModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -607,6 +615,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\Home\page_404.cshtml" />
+    <Content Include="Views\Shared\_Departamentos_Table.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

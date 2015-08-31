@@ -10,6 +10,7 @@ namespace Project.Controllers
 {
     public class HomeController : Controller
     {
+        //============================================== PARTIAL VIEWS =====================================
         [HttpGet]
         public PartialViewResult _Roles() 
         {
@@ -23,11 +24,37 @@ namespace Project.Controllers
         {
             return PartialView("_Usuarios");
         }
+
+        [HttpGet]
         public PartialViewResult _Departamentos()
         {
             return PartialView("_Departamentos");
         }
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public PartialViewResult _Departamentos(tbl_departamento depart)
+        {
+            Service1Client client = new Service1Client();
+            client.PostDepartmento(depart);
+            client.Close();
+            return PartialView("_Departamentos");
+        }
+        //
+        //============================================== TABLE VIEWS =====================================
+        //
+        [ChildActionOnly]
+        [HttpGet]
+        public ActionResult _Departamentos_Table()
+        {
+            Service1Client client = new Service1Client();
+            List<tbl_departamento> list = new List<tbl_departamento>();
+            list.AddRange(client.GetDepartamentosList());
+            client.Close();
+            return PartialView("_Departamentos_Table",list);
+        }
+        //
+        //================================================= VIEWS ========================================
+        //
         public ViewResult index()
         {
             Index_Data ID = new Index_Data();

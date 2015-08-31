@@ -234,5 +234,49 @@ namespace WcfService
                 return false;
             }
         }
+
+        public int DeleteRol(int Id) 
+        {
+            vsystem_ndcEntities db = new vsystem_ndcEntities();
+            tbl_roles rol = new tbl_roles();
+            rol = db.tbl_roles.Find(Id);
+            if(rol != null)
+            {
+                try
+                {
+                    db.tbl_roles.Remove(rol);
+                    db.SaveChanges();
+                    return 1;
+                }
+                catch (SystemException) 
+                {
+                    return 2;
+                }
+
+            }
+            return 0;
+        }
+
+        public int DeleteDepartamento(int Id)
+        {
+            vsystem_ndcEntities db = new vsystem_ndcEntities();
+            tbl_departamento depar = new tbl_departamento();
+            depar = db.tbl_departamento.Find(Id);
+            if (depar != null)
+            {
+                try
+                {
+                    db.tbl_departamento.Remove(depar);
+                    db.SaveChanges();
+                    return 1;
+                }
+                catch (SystemException)
+                {
+                    return 2;
+                }
+
+            }
+            return 0;
+        }
     }
 }
